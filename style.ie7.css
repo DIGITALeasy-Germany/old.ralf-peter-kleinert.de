@@ -1,0 +1,138 @@
+/* Created by Artisteer v4.3.0.60745 */
+
+.ssr-header, #ssr-header-bg, .ssr-layout-cell, .ssr-layout-wrapper, .ssr-footer, .ssr-nav, #ssr-hmenu-bg, .ssr-sheet,
+.clearfix {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+
+.ssr-textblock > div {
+   display: block;
+   line-height: normal;
+   zoom: 1;
+}
+
+.ssr-hmenu>li, .ssr-hmenu>li>a
+{
+   display: inline !important;
+   zoom: 1;
+   float: none !important;
+   vertical-align: top;
+}
+ul.ssr-hmenu, ul.ssr-hmenu ul {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+#ssr-hmenu-bg 
+{
+   display: none;
+}
+
+ul.ssr-hmenu>li:first-child {
+   padding-right:2px;
+}
+ul.ssr-hmenu>li{
+   zoom:expression(runtimeStyle.zoom=1,insertBefore(document.createElement('span'),firstChild).className='ssr-hmenu-separator');
+}
+ul.ssr-hmenu>li>span.ssr-hmenu-separator
+{
+   position:absolute;
+   display: block;
+   top:0;
+   left:  -2px;
+   width: 2px;
+   height: 38px;
+   background: url('images/menuseparator.png') center center no-repeat;
+}
+ul.ssr-hmenu>li:first-child>span.ssr-hmenu-separator
+{
+   display:none;
+}
+
+ul.ssr-hmenu ul{
+   background-color: #122D4E !important;
+}
+
+.ssr-content-layout, .ssr-content-layout-row, .ssr-layout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.ssr-layout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+
+input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+* html input[type="text"]
+{
+   margin :0;
+}
+
+form.ssr-search>input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+form.ssr-search div>input[type="text"]
+{
+   width: 100%;
+}
+
+* html form.ssr-search>input[type="text"] 
+{
+   margin :0;
+}
+
+form.ssr-search
+{
+   zoom: 1;
+}
+ul.ssr-vmenu, ul.ssr-vmenu ul, ul.ssr-vmenu li{
+   zoom: 1;
+}
+
+ul.ssr-vmenu ul 
+{
+}
+
+.ssr-postmetadataheader{
+   zoom:1;
+}
+
+.ssr-postheadericons span{
+   zoom: 1;
+}
+.ssr-postcontent {
+   height: 1%;
+}
+
+.ssr-sidebar1 
+{
+   width: auto;
+   float:none;
+   background: none !important;
+   border: none !important;
+   zoom:expression(runtimeStyle.zoom=1, parentNode.parentNode.insertBefore(document.createElement('div'),parentNode.parentNode.firstChild).className='ssr-sidebar1-bg' + (className.indexOf('ssr-sidebar1-fix') == -1 ? '' : ' ssr-sidebar1-bg-fix' ));
+}
+
+.ssr-sidebar1-bg 
+{
+   border-left:1px dotted #A3B4C8;
+   position:absolute;
+   z-index:-2;
+   direction: ltr;
+   right:  0;
+   bottom:0;
+   top:0;
+   width: 370px;
+   overflow:hidden;
+   display:block;
+}
+
