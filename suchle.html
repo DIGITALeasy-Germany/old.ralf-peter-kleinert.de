@@ -25,6 +25,32 @@
 
 <script src="search-index.js" defer></script>
 <script src="search.js" defer></script>
+<style id="suchle-design">
+#suchform { background:#fff; color:#202124; border-radius:12px; padding:48px 24px 32px; margin:8px 0 24px; text-align:center; font-family:Arial,Helvetica,sans-serif; box-sizing:border-box; }
+#suchform .suchle-logo { display:block; width:420px; max-width:90%; height:auto; margin:0 auto 28px; border:0; }
+#suchform #search { width:100%; max-width:584px; margin:0 auto; }
+#suchform .suchle-label { position:absolute; width:1px; height:1px; padding:0; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; }
+#suchform #suchbegriff { display:block; width:100%; height:48px; padding:0 22px; border:1px solid #dadce0; border-radius:24px; background:#fff; color:#202124; font:16px Arial,Helvetica,sans-serif; box-sizing:border-box; outline:none; box-shadow:none; }
+#suchform #suchbegriff:hover, #suchform #suchbegriff:focus { border-color:#dfe1e5; box-shadow:0 1px 6px rgba(32,33,36,.24); }
+#suchform #suchbegriff:focus-visible { outline:2px solid #1a73e8; outline-offset:3px; }
+#suchform .suchle-submit { display:inline-block; margin:24px 0 16px; padding:10px 20px; min-height:40px; border:1px solid #f8f9fa; border-radius:4px; background:#f8f9fa; color:#3c4043; font:14px Arial,Helvetica,sans-serif; cursor:pointer; box-shadow:none; }
+#suchform .suchle-submit:hover { border-color:#dadce0; box-shadow:0 1px 1px rgba(0,0,0,.1); }
+#suchform .suchle-submit:focus-visible { outline:2px solid #1a73e8; outline-offset:3px; }
+#suchform .suchle-hint { color:#5f6368; font:13px/1.5 Arial,Helvetica,sans-serif; margin:0; }
+#suchform .suchle-tips { margin:24px auto 0; max-width:584px; color:#5f6368; font:13px/1.6 Arial,Helvetica,sans-serif; }
+#suchform .suchle-tips summary { cursor:pointer; }
+#suchform .suchle-tips p { color:#5f6368; font:13px/1.6 Arial,Helvetica,sans-serif; margin:10px 0 0; }
+#search-results { max-width:584px; margin:24px auto 0; text-align:left; }
+#search-results > p { color:#5f6368; font:14px/1.6 Arial,Helvetica,sans-serif; margin:10px 0; }
+#search-results ol { list-style:none; padding:0; margin:24px 0 0; }
+#search-results li { background:none; padding:0; margin:0 0 24px; }
+#search-results li::before { content:none; }
+#search-results li a { color:#1a0dab; font:20px/1.4 Arial,Helvetica,sans-serif; text-decoration:none; }
+#search-results li a:hover { text-decoration:underline; }
+#search-results li a:visited { color:#681da8; }
+#search-results li p { color:#4d5156; font:14px/1.6 Arial,Helvetica,sans-serif; margin:6px 0 0; }
+@media (max-width:480px) { #suchform { padding:32px 16px 24px; } #suchform .suchle-logo { max-width:100%; margin-bottom:20px; } }
+</style>
 </head>
 <body>
 <div id="ssr-main">
@@ -38,16 +64,18 @@
                         <div class="ssr-layout-cell ssr-content"><article class="ssr-post ssr-article">
                                 
                                                 
-                <div class="ssr-postcontent ssr-postcontent-0 clearfix"><h1>Website durchsuchen</h1>
-
+                <div class="ssr-postcontent ssr-postcontent-0 clearfix"><div id="suchform">
+<img class="suchle-logo" src="images/Suchle-1.png" width="879" height="351" alt="Suchle">
 <form id="search" action="suchle.html" method="get" role="search">
-<p><label for="suchbegriff">Bitte geben Sie mindestens 3 Zeichen ein:</label></p>
-<p><input type="search" name="q" id="suchbegriff" placeholder="Suchbegriff(e)" minlength="3" required style="max-width:100%;box-sizing:border-box"> <button type="submit">Suchen</button></p>
+<label class="suchle-label" for="suchbegriff">Website durchsuchen</label>
+<input type="search" name="q" id="suchbegriff" placeholder="Website durchsuchen" minlength="3" required aria-describedby="suchle-hint">
+<button class="suchle-submit" type="submit">Suchle-Suche</button>
+<p id="suchle-hint" class="suchle-hint">Bitte geben Sie mindestens 3 Zeichen ein.</p>
 </form>
-<p>Mehrere Wörter finden Seiten mit allen Begriffen. Mit „oder“ finden Sie Seiten mit mindestens einem Begriff. Anführungszeichen suchen eine genaue Phrase.</p>
+<details class="suchle-tips"><summary>Tipps zur Suche</summary><p>Mehrere Wörter finden Seiten mit allen Begriffen. Mit „oder“ finden Sie Seiten mit mindestens einem Begriff. Anführungszeichen suchen eine genaue Phrase.</p></details>
 <div id="search-results" role="status" aria-live="polite" aria-atomic="true"></div>
-<noscript><p>Bitte aktivieren Sie JavaScript, um die Suche zu verwenden.</p></noscript></div>
-
+<noscript><p>Bitte aktivieren Sie JavaScript, um die Suche zu verwenden.</p></noscript>
+</div></div>
 
 </article></div>
                         <div class="ssr-layout-cell ssr-sidebar1"><div class="ssr-vmenublock clearfix">
