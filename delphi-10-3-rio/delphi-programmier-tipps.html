@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="de-DE"><head>
+    <meta charset="utf-8">
+    <title>Programmier Tipps für Delphi Embarcadero</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="../style.css" media="screen">
+    <!--[if lte IE 7]><link rel="stylesheet" href="../style.ie7.css" media="screen" /><![endif]-->
+    <link rel="stylesheet" href="../style.responsive.css" media="all">
+
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <script src="../jquery.js"></script>
+    <script src="../script.js"></script>
+    <script src="../script.responsive.js"></script>
+<meta name="description" content="Viele kleine Tipps zum Programmieren in Delphi. Delphi Shortcuts, Programmiertipps, Hilfe beim Programmieren">
+<meta name="keywords" content="Delphi Tipps, Programmier Tipps, Tipps, Tip">
+<meta name="author" content="Ralf-Peter Kleinert">
+<meta name="email" content="kontakt@ralf-peter-kleinert.de">
+<meta name="copyright" content="Copyright © by Ralf-Peter Kleinert">
+<meta name="robots" content="index, follow">
+<meta property="article:modified_time" content="2024-02-06T14:10:30+00:00" />
+<script id="usercentrics-cmp" async data-eu-mode="true" data-settings-id="rdKSWSBTj" src="https://app.eu.usercentrics.eu/browser-ui/latest/loader.js"></script>
+
+
+
+</head>
+<body>
+<div id="ssr-main">
+<nav class="ssr-nav">
+    <ul class="ssr-hmenu"><li><a href="../index.html" class="">Inhaltsverzeichnis</a></li><li><a href="../webdesign-und-websites.html" class="">Webdesign und Websites</a></li><li><a href="../social-media-manager.html" class="">Social Media Manager werden</a></li><li><a href="../delphi-10-3-rio.html" class="">Delphi-10-3-rio</a></li><li><a href="../video-produktion.html">Video</a><ul><li><a href="../video-produktion/videobearbeitung-lernen.html">Videobearbeitung lernen</a></li><li><a href="../video-produktion/planung-in-der-videoproduktion.html">Planung in der Videoproduktion</a></li><li><a href="../video-produktion/videobearbeitung-mit-magix.html">Videobearbeitung mit Magix</a></li></ul></li><li><a href="../suchle.html">Suchen</a></li></ul> 
+    </nav>
+<div class="ssr-sheet clearfix">
+            <div class="ssr-layout-wrapper">
+                <div class="ssr-content-layout">
+                    <div class="ssr-content-layout-row">
+                        <div class="ssr-layout-cell ssr-content"><article class="ssr-post ssr-article">
+                                
+                                                
+                <div class="ssr-postcontent ssr-postcontent-0 clearfix"><div class="ssr-content-layout">
+    <div class="ssr-content-layout-row">
+    <div class="ssr-layout-cell"  >
+        <p>Viele dieser Tipp sind auch in anderen Programmiersprachen gut zu gebrauchen. Doch zusammengestellt wurden diese Tipps für Delphi 10.3 Rio. Hier kannst du dir schon ein paar Anregungen zum besseren Programmieren holen.</p>
+        <hr id="system-readmore">
+        <h1 id="programmier-tipps-delphi">Programmiertipps für Delphi</h1>
+        <div id="artikel-inhalte">
+        <p id="inhalt" class="inhalts-menue">Inhalt</p>
+        <p class="thema">Programmiertipps für Delphi</p>
+        <ol>
+        <li><a href="#kommentare">Kommentieren in Delphi</a>
+        </li><li><a href="#formatieren">Code Formatieren</a>
+        </li><li><a href="#Erklaerung-TypenVorzeichen">gute Variablennamen vergeben</a>
+        </li><li><a href="#Weitere-Codierungen-f%C3%BCr-gute-Variablennamen">Weitere Variablennamen Codes</a>
+        </li><li><a href="#tabulatorreihenfolge">Tab Reiehnfolge sortieren</a>
+        <!--
+        <li><a href="#tabulatorreihenfolge">Tab Reiehnfolge sortieren</a></li>
+        <li><a href="#zusammenfassung">Zusammenfassung</a></li>
+        --></li></ol>
+        <p><strong>Weiter</strong></p>
+        <ul>
+        <li>
+        <p><a href="../delphi-10-3-rio/logische-operatoren.html">logische Operatoren</a></p>
+        </li>
+        </ul>
+        <p><strong>Übersicht</strong></p>
+        <ul>
+        <li><a href="../delphi-10-3-rio.html">Delphi 10.3 Rio</a></li>
+        </ul>
+        </div>
+        <h2 id="kommentare">Kommentare und Kommentieren von Code</h2>
+        <p>Als gut gemeinten Tipp zum einen und als meiner Meinung nach, absuluten Pflicht eines Programmierers: kommentiere deinen Code! Schreibe als Kommentar, was diese oder jene Codezeile tut, macht oder sonst was! Kommentare werden einzeilig mit // eingeleitet oder mehrzeilig von {} umfasst. Alles was als Kommentar markiert ist, wird vom Compiler nicht umgesetzt. Mit Kommentarzeichen können auch fehlerhafte Codebausteine zwischengeparkt werden. Kommentare sind enorm wichtig. Besonders wenn du Programme anderer verstehen willst, oder wenn du nach langer Zeit im eigenen Code rummachst. <span style="color: #339966;">//Kommentare werden auf dieser Website grün dargestellt</span>. Dies ist auch ein <span style="color: #339966;">{Kommentar}</span> Beispiel.</p>
+        <p><a href="#inhalt">Zurück zum Inhalts Menü</a></p>
+        <h2 id="formatieren">Code Formatieren</h2>
+        <p>Mit der Tastenkombination <b>strg + o</b> danach <b>c</b> kann im Editor eine Funktion aktiviert werden die es ermöglicht den Code spaltenweise zu markieren. Dies diehnt zum besseren Formatieren und dann Verbesserung der Lesbarkeit des Codes, denn einzelne Spalten können so verschoben oder eingerückt werden. Diese Funktion kann mit <b>strg + o</b> danach <b>k</b> wieder abgeschaltet werden. Dann kann der Code wieder Zeilenweise markiert werden.</p>
+        <p><a href="#inhalt">Zurück zum Inhalts Menü</a></p>
+        <h2 id="Erklaerung-TypenVorzeichen">Variablennamen gut vergeben, Variablennamen richtig codieren</h2>
+        <p>Bei der Deklaration von Variablennamen ist der Phantasie im Grunde keine Grenze gesetzt. Um den Code aber besser lesbar und verständlich zu gestalten, macht es Sinn den Variablen ihren Typ im Namen mitzugeben. Hierzu genügt ein einfaches System.</p>
+        <div class="tipp">
+        <p><b class="tipp-tipp">Beispiel ohne Codierung:</b></p>
+        <p><em><b>var</b></em></p>
+        <p><span style="color: #339966;"><em>//die SpezialVariable hat in diesem Beispiel keine Vorzeichen<br></em></span><em><span style="color: #339966;">//im Code ist nicht immer ersichtlich welchen Typ diese Variable hat:</span><br>SpezialVariable : String;<br><b>begin</b><br><span style="color: #339966;">// Code</span><br><b>end.</b><br><br>Die Variable: <b>SpezialVariable</b> ist vom Typ String. Also eine Zeichenfolge. Dies ist aber im Quellcode nicht immer ersichtlich. Daher ist es sinnvoll den Typen einer Variable mit in den Variablennamen zu integrieren.<br></em></p>
+        </div>
+        <div class="tipp">
+        <p><b class="tipp-tipp">Beispiel mit Codierung:</b></p>
+        <p><em><b>var</b></em></p>
+        <p><em><span style="color: #339966;">//die SpezialVariable hat die Vorzeichen cs</span><br><span style="color: #339966;">//demnach ist diese Variable ein String:&nbsp;</span><br><b>cs</b>SpezialVariable : String;</em></p>
+        <p><em><span style="color: #339966;">//die Supervariable hat die Vorzeichen ci</span><br><span style="color: #339966;">//demnach ist die Variable eine Ganzzahl, eine Integer</span><br>ciSuperVariable : Integer;<br><b>begin</b><br><span style="color: #339966;">// Code</span><br><b>end.</b><br><br>Vor den Variablennamen <b>SpezialVariable</b> wurde ein <b>cs</b> für <b>caracter string</b> gestellt. Dies macht es im Verlauf deutlich leichter den Code zu lesen und zu verstehen.</em></p>
+        </div>
+        <p><a href="#inhalt">Zurück zum Inhalts Menü</a></p>
+        <h3 id="Weitere-Codierungen-für-gute-Variablennamen">Weitere Codierungen für gute Variablennamen, Typen-Vorzeichen:</h3>
+        <p>Dies sind nur Tipps und Anregungen!</p>
+        <p>Typendeklaration mit 2 Buchstaben als Vorzeichen. Hier <b>cx</b>:</p>
+        <ul>
+        <li><b>ci</b>SpezialVariable = <b>caracter integer</b></li>
+        <li><b>lb</b>SpezialVariable = <b>logische Boolean</b></li>
+        <li><b>cr</b>SpezialVariable = <b>caracter real</b></li>
+        <li><b>cn</b>SpezialVariable = <b>caracter numeric</b></li>
+        <li><b>ca</b>SpezialVariable = <b>caracter alphanumeric</b></li>
+        </ul>
+        <p>Wie du nun die Vorzeichen benennst und verwendest ist dir selbst überlassen. Du kannst gerne diese Art wie hier verwenden, oder dir etwas selbst ausdenken, um Variablen zu markieren oder zu codieren. Du kannst auch darauf verzichten. Wie es beliebt. Aber es macht vieles einfacher, wenn du dir ein solches System zurecht legst. Wichtig ist dabei, dass du selbst immer weißt, was solche Vorzeichen bedeuten. Also solltest du dir dafür ein kleines Wörterbuch anlegen</p>
+        <p><a href="#inhalt">Zurück zum Inhalts Menü</a></p>
+        <h2 id="shortcuts-in-delphi">Shortcuts und Tastaturbefehle in Delphi</h2>
+        <p>Um wichtige Funktionen im Editor schnell ausführen zu können, gibt es auch in Delphi Tastenkombinationen, also Shortcuts. Die wichtigsten liste ich hier eben auf:</p>
+        <p id="shortcutliste"><b>Shortcut-Liste Delphi</b>:</p>
+        <ul>
+        <li><a href="#Speichern">Speichern</a> = <b>Strg + s</b></li>
+        <li><a href="#alles-Speichern">alles Speichern</a> = <b>Strg + Shift +s</b></li>
+        <li><a href="#Sprungmarke-setzen">Sprungmarke setzen</a> = <b>Strg + Shift + 1-9</b></li>
+        <li><a href="#Sprungmarke-anspringen">Sprungmarke anspringen</a> = <b>Strg + 1-9</b></li>
+        <li>Sprungmarke entfernen = <b>Strg + Shift + 1-9</b></li>
+        <li><a href="#Zeilennummer-anspringen">Zeilennummer anspringen</a> = <b>Strg + o dann g</b></li>
+        <li><a href="#schnelle-Suche">schnelle Suche</a> = <b>Strg + f</b></li>
+        <li><a href="#in-Dateien-Suchen">in Dateien Suchen</a> = <b>Strg + Shift + f</b></li>
+        <li><a href="#Suchen-und-Ersetzen">Suchen und Ersetzen</a> = <b>Strg + h</b></li>
+        <li><a href="#Block-Markiermodus-aktivieren">Block-Markiermodus</a> = <b>Strg + o dann c</b></li>
+        <li>Block-Markiermodus verlassen = <b>Stgr + o dann k</b></li>
+        <li><a href="#Makroaufzeichnung">Makroaufzeichnung</a> = <b>Strg + Shift + r</b></li>
+        <li>Makroaufzeichnung beenden = <b>Strg + Shift r</b></li>
+        <li><a href="#Makro-abspielen-ausf%C3%BChren">Makro abspielen, ausführen</a> = <b>Strg + Shift + p</b></li>
+        <li><a href="#Zur%C3%BCck-o-R%C3%BCckg%C3%A4ngig">Zurück o Rückgängig</a> = <b>Strg + z</b></li>
+        <li><a href="#Zur%C3%BCck-o-R%C3%BCckg%C3%A4ngig-r%C3%BCckg%C3%A4ngig-machen">Zurück o Rückgängig rückgängig machen</a> = <b>Strg + Shift + z</b></li>
+        
+        
+        </ul>
+        <p><a href="#inhalt">Zurück zum Inhalts Menü</a></p>
+        <p id="Speichern"><b>Speichern Strg + s</b>. Eine der wichtigsten Tastenkombinationen ist in jeder Software, so auch in Delphi, die Speichern Strg + s Funktion. Diese sollte man sich angewöhnen und automatisch anwenden. Nichts ist schlimmer, als ein Stromausfall, oder eine Putzkraft, die den Stecker des Computers zieht und diese Tastenkombi wurde nicht benutzt! <b>Strg + s</b> speichert nur die aktuelle in Delphi aktive Datei. Zu einem Projekt gehören oft mehrere Dateien und es können auch mehrere geöffnet sein.</p>
+        <p><a href="#shortcutliste">Zurück zur Shortcut Liste</a></p>
+        <p id="alles-Speichern"><b>Alles speichern Strg + Shift + s</b>. Delphi bietet verschiedene Speicheroptionen. Mit Alles speichern werden alle in Delphi geöffneten Dateien gespeichert. Es kann nämlich sein, dass Änderungen in verschiedenen Dateien vorgenommenwerden müssen, weil zum Beispiel ein Button auf eine Funktion in einer anderen Datei zugreift. Beim drücken von Strg + Shift + s werden alle geöffneten Dateien gespeichert.</p>
+        <p><a href="#shortcutliste">Zurück zur Shortcut Liste</a></p>
+        <p id="Sprungmarke-setzen"><b>Sprungmarke setzen Strg + Shift + 1-9</b>. Mit einer Sprungmarke kann eine Zeile markiert werden. Programmiercodes können sehr, sehr umfangreich und lang werden. Daher ist es von Vorteil eine Sprungmarke zu setzen wenn man eine bestimmte Zeile, oder mehr, markieren will um zu dieser schnell zurückzufinden. Hierzu gehst du in die entsprechende Zeile, drückst Strg + Shift sowie eine Ziffer von 1-9. Dann erscheint links neben der Zeilennummer, oder links neben der Zeile die zuvor gedrückte Ziffer. Nun kannst du dich weiter im Code bewegen. Um die Sprungmarke wieder zu entfernen, drückst du wieder Strg + Shift + deine zuvor gewählte Ziffer</p>
+        <p><a href="#shortcutliste">Zurück zur Shortcut Liste</a></p>
+        <p id="Sprungmarke-anspringen"><b>Sprungmarke ansprigen</b>. Willst du nun zu deiner Zeile, an der du eine Sprungmarke gesetzt hast zurückspringen, drückst du Strg + deine gewählte Ziffer.</p>
+        <p><a href="#shortcutliste">Zurück zur Shortcut Liste</a></p>
+        <p id="Zeilennummer-anspringen"><b>Zeilennummer anspringen Strg + o dann g</b> Eine Zeilennummer anspringen kannst du, wenn du Strg + o drückst, diese loslässt und dann g drückst. Es öffnet sich ein Fenster, in welches du deine Zeilennummer eingeben kannst. Dies kann zum Beispiel helfen, wenn du die Nummer der Zeile im Kopf hast, oder die Nummer von einem Programmierkollegen genannt bekommst, oder die Nummer aus einem Tutorial kennst. Die Gründe können vielfältig sein, eine Zeilennummer anzusprongen.</p>
+        <p><a href="#shortcutliste">Zurück zur Shortcut Liste</a></p>
+        <p id="schnelle-Suche"><b>schnelle Suche Strg + f</b>. Mit der schnellen Suche kannst du im geöffneten Quellcode nach Ausdrücken, Wörtern oder was auch immer suchen. Hierzu drückst du einfach Strg + f und unterhalb des Codes öffnet sich ein kleines Suchfenster.</p>
+        <p><a href="#shortcutliste">Zurück zur Shortcut Liste</a></p>
+        <p id="in-Dateien-Suchen"><b>in Dateien Suchen Strg + Shift + f</b>. Die Funktion "in Dateien Suchen" wird mit der Tastenkombi Strg + Shift + f aufgerufen. Es öffnet sich ein Fenster in dem du weitere Parameter eingeben kannst. So ist es möglich alle zum Projekt gehörenden Dateien zu durchsuchen. Projekte können nämlich unter Umständen aus tausenden Dateien bestehen. Nach der Suche wird am unteren Programmfensterrand von Delphi ein Meldungsfenster angezeigt. Hier sind dann die gefundenen Dateien aufgelistet und du kannst sie direkt in Delphi öffnen. Sollte eine Zeichenfolge mehrmals gefunden werden, kannst du auch von hier aus direkt an die Stelle, also Zeilennummer springen. Tolle Sache.</p>
+        <p><a href="#shortcutliste">Zurück zur Shortcut Liste</a></p>
+        <p id="Suchen-und-Ersetzen"><b>Suchen und Ersetzen Strg + h</b> ist eine Klasse Funktion. Du kannst ganze Codeabschnitte markieren und dann Strg + h drücken. Dann geht das Suchen und Ersetzen Fenster auf. Hier gibst du dann das Wort ein, dass du ersetzen willst. Delphi sucht dann im Markierten Codeteil dein gewähltes Wort und ersetzt alle im Markierten teil mit deinem neu gwählten Wort. Das kann seh hilfreich sein wenn du Vorlagen benutzt und 200 mal das Wort: <i>Vorlage</i> darin enthalten ist. Z.B. VorlageButton, VorlageTextFeld, Vorlage.Click(Sender) oder, oder, oder. Jetzt könntest du <i>Vorlage</i> ganz einfach mit <i>Bestellen</i> oder was auch immer ersetzen.</p>
+        <p><a href="#shortcutliste">Zurück zur Shortcut Liste</a></p>
+        <p id="Block-Markiermodus-aktivieren"><b>Block-Markiermodus Strg + o dann c</b>. Der Block-Markiermodus ist hilfreich, wenn du nicht Zeilenweise Markieren willst, sondern Blockweise. Das kann beim Einrücken von vorteil sein oder beim gezielten Markieren von Codeteilen. Um diese Funktion zu verstehen, musst du diese unbedingt Probieren. Die Vorteile werden dir ersichtlich werden. Drücke Strg + o und danach c um den Block-Markiermodus einzuschalten und <b>Strg + o und danach k</b> um ihn wieder auszuschalten.</p>
+        <p><a href="#shortcutliste">Zurück zur Shortcut Liste</a></p>
+        <p id="Makroaufzeichnung"><b>Makroaufzeichnung Strg + Shift + r</b>. Die Makroaufzeichnung kann das was du im Editor tust aufnehmen und später, wenn du es möchtest wiederholen. Das können läste Tastatureingaben sein, wo du weißt, dass sie wiederholt werden müssen.</p>
+        <p><a href="#shortcutliste">Zurück zur Shortcut Liste</a></p>
+        <p id="Makro-abspielen-ausführen"><b>Makro abspielen, ausführen Strg + Shift + p</b>. Ein Makro abspielen, bzw. ausführen kannst du nach dem Aufzeichnen mit Strg + Shift + p. Dann führt der Editor genau das aus, also schreibt es nieder, was du vorher aufgezeichnet hast.</p>
+        <p><a href="#shortcutliste">Zurück zur Shortcut Liste</a></p>
+        <p id="Zurück-o-Rückgängig"><b>Zurück o Rückgängig Strg + z</b>. Um eine änderung wieder Rückgängig zu machen wird Strg + z gedrückt. Das funktioniert in der Regel in allen möglichen Programmen. Die Anzahl der Rückschritte kann unterschiedlich sein und in vielen Programmen oft auch in den Optionen angepasst werden. Hier in Delphi können somit Änderungen rückgängig gemacht werden, wenn zum Beispiel das Programm plötzlich nicht mehr funktioniert.</p>
+        <p><a href="#shortcutliste">Zurück zur Shortcut Liste</a></p>
+        <p id="Zurück-o-Rückgängig-rückgängig-machen"><b>Zurück o Rückgängig rückgängig machen Strg + Shift + z</b> benutzt du um eine rückgängig gemachte Änderung wieder herzustellen. So kannst du zum Beispiel zwischen 2 Speicherzuständen hin und herspringen. Oder deine Entscheidung einfach nochmal rückgängig machen.</p>
+        <p><a href="#shortcutliste">Zurück zur Shortcut Liste</a></p>
+        <p><a href="#inhalt">Zurück zum Inhalts Menü</a></p>
+        <!--  Weiter einfügen: -->
+        <h3 id="tabulatorreihenfolge">Tab-Reihenfolge Tabulatorreihenfolge Tabs</h3>
+        <p>Um in einem Formular die Tabulatorreihenfolge festzulegen, kannst du im <b>Formulardesigner einen Rechtsklick</b> machen und dann Tabulatorreihenfolge anklicken. Oder im Kopfmenü Bearbeiten &gt; Tabulatorreihenfolge. Hier kannst du nun die Eingabefelder, die du angelegt hast sortieren. Dies ist zum Beispiel sinnvoll, wenn genau festgelgt werden soll von welchem Feld zu welchen Feld der Tab springen soll. Es könnte auch sein, dass verschiedene Felder abhängig voneinander sind. Zum Beispiel der User klickt einen Radiobutton an: männlich. Dann braucht der Tab nicht mehr in "Herr" springen. Wäre auch nicht schön, wenn der Tab auf dem Monitor hin und herspringt, ohne sinnvolle Aufteilung, weil du die Felder nicht in der richtigen Reihenfolge angelegt hast.</p>
+        <p><a href="#inhalt">Zurück zum Inhalts Menü</a></p>
+    </div>
+    </div>
+</div>
+<div class="ssr-content-layout">
+    <div class="ssr-content-layout-row">
+    <div class="ssr-layout-cell"  >
+        <p><strong>Momentan keine Delphi Programmierungs-Artikel mehr</strong></p>
+        <p>Ich habe mich dazu entschieden, auf meiner Website nicht weiter auf die Programmierung in Delphi einzugehen. Ich finde es extrem Schade, denn ich Programmiere gern in Pascal und Delphi - aber die Welt hat sich verändert.</p>
+        <p><b>Meine Gründe:</b> Seit der Corona-Pandemie hat sich die Digitalisierung schneller verbreitet und vieles aus der pysischen Welt hat sich ins Internet verlagert. Dann, nach Beginn des total sinnlosen Krieges gegen die Ukranie, hat sich vor allem die Bedrohungslage im digitalen Bereich massiv verschärft.</p>
+        <p>Ich habe mich also entschieden, mich <a title="Ralf-Peter Kleinert IT Sicherheit und Computersicherheit, Cybersecurity" href="../sicherheit-in-der-it.html">voll und ganz der IT- und Cybersicherheit zu widmen</a>. Ich mache weitere Ausbildungen und Lehrgänge im Bereich Computersicherheit und Cybersecurity. Es ist einfach wichtig für mich - wenn man seit 1990 mit dem Computer arbeitet, dann ist das irgendwie so ein persönliches Ding.</p>
+    </div>
+    </div>
+</div>
+<div class="ssr-content-layout">
+    <div class="ssr-content-layout-row">
+    <div class="ssr-layout-cell"  >
+        <p class="AktualisierungsDatum">Aktualisiert: Ralf-Peter Kleinert 06.02.2024</p>
+    </div>
+    </div>
+</div>
+</div>
+
+
+</article></div>
+                        <div class="ssr-layout-cell ssr-sidebar1"><div class="ssr-vmenublock clearfix">
+        <div class="ssr-vmenublockcontent">
+<ul class="ssr-vmenu"><li><a href="../index.html" class="">Inhaltsverzeichnis</a></li><li><a href="../werbung.html" class="">Marketing und Werbung</a></li><li><a href="../webdesign-und-websites.html" class="">Webdesign und Websites</a><ul class=""><li><a href="../webdesign-und-websites/suchmaschinenoptimierung.html" class="">Suchmaschinenoptimierung</a></li></ul></li><li><a href="../dienstleister-und-partner.html" class="">Dienstleister</a></li><li><a href="../social-media-manager.html" class="">Social Media Manager werden</a><ul class=""><li><a href="../social-media-manager/die-aufgaben.html" class="">Aufgaben Social Media Manager</a></li><li><a href="../social-media-manager/internetrecht.html" class="">Recht im Internet</a></li><li><a href="../social-media-manager/die-wichtigsten-networks.html" class="">Soziale Netzwerke</a></li><li><a href="../social-media-manager/analysen.html" class="">Analysen</a></li><li><a href="../social-media-manager/text-und-sprache.html" class="">Sprache richtig nutzen</a></li><li><a href="../social-media-manager/hashtags.html" class="">Wie nutzt du Hashtags</a></li><li><a href="../social-media-manager/bildbearbeitung.html" class="">Bildbearbeitung</a></li><li><a href="../social-media-manager/videobearbeitung.html" class="">Videobearbeitung nicht schwer</a></li><li><a href="../social-media-manager/video-marketing.html" class="">Videomarketing richtig nutzen</a></li><li><a href="../social-media-manager/datensicherheit.html" class="">Datenschutz und Datensicherheit</a></li><li><a href="../social-media-manager/lehrgang.html" class="">Social Media Manager Lehrgang</a><ul class=""><li><a href="../social-media-manager/lehrgang/grundlagen-1.html" class="">Grundlagen Social Media 1</a></li><li><a href="../social-media-manager/lehrgang/grundlagen-2.html" class="">Grundlagen Social Media 2</a></li><li><a href="../social-media-manager/lehrgang/social-media-charakteristika.html" class="">Charakteristika Social Media</a></li><li><a href="../social-media-manager/lehrgang/die-prinzipien-des-web-2-0.html" class="">Prinzipien des Web 2.0</a></li><li><a href="../social-media-manager/lehrgang/aktuelle-top-infos.html" class="">Up to Date bleiben</a></li><li><a href="../social-media-manager/lehrgang/psychologie.html" class="">Grundlagen Psychologie 1</a></li><li><a href="../social-media-manager/lehrgang/psychologie-2.html" class="">Grundlagen Psychologie 2</a></li><li><a href="../social-media-manager/lehrgang/psychologie-3.html" class="">Grundlagen Psychologie 3</a></li><li><a href="../social-media-manager/lehrgang/begriffe-social-media.html" class="">Begriffe um Social Media</a></li><li><a href="../social-media-manager/lehrgang/fachbegriffe-social-media.html" class="">Fachbegriffe Social Media Management</a></li><li><a href="../social-media-manager/lehrgang/state-of-social.html" class="">State of Social</a></li><li><a href="../social-media-manager/lehrgang/social-media-manage-prozess.html" class="">SM-Management Prozess</a></li><li><a href="../social-media-manager/lehrgang/analysen.html" class="">Analysen</a><ul class=""><li><a href="../social-media-manager/lehrgang/analysen/analysen-social-media.html" class="">Analysen SMM allgemein erklärt</a></li><li><a href="../social-media-manager/lehrgang/analysen/bestands-analyse-fuer-sm-start.html" class="">Bestands-Analyse für SM Start</a></li><li><a href="../social-media-manager/lehrgang/analysen/bestands-analyse-sm-software.html" class="">Bestands-Analyse SM Software</a></li><li><a href="../social-media-manager/lehrgang/analysen/in-das-web-hineinhoeren.html" class="">In das Web hineinhören</a></li></ul></li></ul></li><li><a href="../social-media-manager/strategien.html" class="">Strategien und Planung</a><ul class=""><li><a href="../social-media-manager/strategien/konzept-entwickeln.html" class="">Social Media Konzept</a></li></ul></li></ul></li><li><a href="../delphi-10-3-rio.html" class="">Delphi-10-3-rio</a></li><li><a href="../umweltschutz.html">Umweltschutz</a></li><li><a href="../social-media-klar.html">Social-Media-Klar</a></li><li><a href="../video-produktion.html">Video</a><ul><li><a href="../video-produktion/videobearbeitung-lernen.html">Videobearbeitung lernen</a></li><li><a href="../video-produktion/planung-in-der-videoproduktion.html">Planung in der Videoproduktion</a></li><li><a href="../video-produktion/videobearbeitung-mit-magix.html">Videobearbeitung mit Magix</a></li></ul></li><li><a href="../suchle.html">Suchen</a></li></ul>
+                
+        </div>
+</div></div>
+                    </div>
+                </div>
+            </div><footer class="ssr-footer">
+<p><a href="https://ralf-peter-kleinert.de/datenschutzerklaerung.html" target="_blank">Datenschutzerklärung</a> | <a href="https://ralf-peter-kleinert.de/impressum.html" target="_blank">Impressum</a></p>
+<p>Copyright © Ralf-Peter Kleinert DIGITALeasy 2016 - 2024. All Rights Reserved.</p>
+</footer>
+
+    </div>
+</div>
+
+
+</body></html>
